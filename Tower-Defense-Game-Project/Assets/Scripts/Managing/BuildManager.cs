@@ -8,18 +8,11 @@ public class BuildManager : MonoBehaviour
 
     private GameObject turretToBuild;
     public GameObject standartTurretPrefab;
+    public GameObject missleLauncherPrefab;
 
     
     private void Awake() {
-        if(instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(this);
-        }
+        instance = this;
     }
 
     private void Start() {

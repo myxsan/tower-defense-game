@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    BuildManager buildManager;
+    [SerializeField] BuildManager buildManager;
 
-    private void Awake() {
+    private void Start() {
         buildManager = BuildManager.instance;
     }
     public void PurchaseStandartTurret() // Can be reused to create another turret purchase method (Just copy-paste it)
     {
-        Debug.Log("Standart Turret Select");
+        Debug.Log("Standart Turret Selected");
         buildManager.SetTurretToBuild(buildManager.standartTurretPrefab);
+    }
+
+    public void PurchaseMissleLauncher()
+    {
+        Debug.Log("Missle Launcher Selected");
+        buildManager.SetTurretToBuild(buildManager.missleLauncherPrefab);
     }
 }
