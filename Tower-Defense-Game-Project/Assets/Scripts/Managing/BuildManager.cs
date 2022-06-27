@@ -9,14 +9,12 @@ public class BuildManager : MonoBehaviour
     private TurretBlueprint turretToBuild;
     public GameObject standartTurretPrefab;
     public GameObject missleLauncherPrefab;
-
+    public GameObject buildVFX;
     
     private void Awake() {
-        instance = this;
-    }
+        if(instance != null) return;
 
-    private void Start() {
-    //    turretToBuild = standartTurretPrefab;
+        instance = this;
     }
 
     public bool CanBuild { get { return turretToBuild != null;} }
@@ -36,5 +34,8 @@ public class BuildManager : MonoBehaviour
 
         GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.turret = turret;
+
+        GameObject vfxIns = (GameObject)Instantiate(buildVFX, node.GetBuildPosition(), Quaternion.identity);
+        Destroy(vfxIns, 5f);
     }
 }
