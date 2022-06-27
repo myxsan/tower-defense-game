@@ -108,6 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2ca1306ab36bb74a9f32ea682622510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0.8207547, g: 0.70073867, b: 0.70073867, a: 0.56078434}
+  hoverColor: {r: 0.8207547, g: 0.70073867, b: 0.70073867, a: 0.54901963}
+  notEnoughMoneyColor: {r: 1, g: 0, b: 0, a: 0.54901963}
   turretPrefab: {fileID: 3211770281005101107, guid: c41f4757cccb5e644a3fa44f5d661dae, type: 3}
   turretPositionOffset: {x: 0, y: 0.5, z: 0}
+  turret: {fileID: 0}

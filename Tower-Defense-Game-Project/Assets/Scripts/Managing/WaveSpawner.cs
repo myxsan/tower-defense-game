@@ -23,7 +23,9 @@ public class WaveSpawner : MonoBehaviour
         }
 
         countDown -= Time.deltaTime;
-        countDownText.text = Math.Ceiling(countDown).ToString("00");
+        countDown = Mathf.Clamp(countDown, 0f, Mathf.Infinity);
+
+        countDownText.text = string.Format("{0:00.00}", countDown);
 
     }
 
