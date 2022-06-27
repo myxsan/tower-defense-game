@@ -2381,6 +2381,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 560628400}
     m_Modifications:
+    - target: {fileID: 4611059291777477848, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_Text
+      value: '$250
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 8590511157610610577, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
       propertyPath: m_Sprite
       value: 
