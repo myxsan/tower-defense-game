@@ -4262,6 +4262,7 @@ RectTransform:
   m_Children:
   - {fileID: 174105739}
   - {fileID: 1318242917}
+  - {fileID: 2023633258}
   m_Father: {fileID: 1270178968}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4352,6 +4353,9 @@ MonoBehaviour:
   missleLauncher:
     prefab: {fileID: 6022640148169143735, guid: a20e07c3c2acf964c886d39f6992586d, type: 3}
     cost: 250
+  laserBeamer:
+    prefab: {fileID: 8565056278529997997, guid: b388abeb9d0b7ad41af4d619508b24ff, type: 3}
+    cost: 350
 --- !u!1001 &561545531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14805,6 +14809,154 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3563351118958534766, guid: d50ab0fd50588244c94684ef8281d2c0, type: 3}
   m_PrefabInstance: {fileID: 2022828160}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2023633257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 560628400}
+    m_Modifications:
+    - target: {fileID: 4611059291777477848, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_Text
+      value: '$350
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610577, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d023b0bae1b3f834081e1dce23b21dc6, type: 3}
+    - target: {fileID: 8590511157610610578, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610578, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610578, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 560628404}
+    - target: {fileID: 8590511157610610578, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610578, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectLaserBeamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610578, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Shop, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610578, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610579, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610579, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_PreferredHeight
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590511157610610581, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+      propertyPath: m_Name
+      value: LaserBeamerShopItem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+--- !u!224 &2023633258 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8590511157610610580, guid: 0e4a8ebc3ea765a47b18ac2a88342fc8, type: 3}
+  m_PrefabInstance: {fileID: 2023633257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2023896255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15320,8 +15472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ea5bc80e5c2964ba67460529399524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standartTurretPrefab: {fileID: 3211770281005101107, guid: c41f4757cccb5e644a3fa44f5d661dae, type: 3}
-  missleLauncherPrefab: {fileID: 6022640148169143735, guid: a20e07c3c2acf964c886d39f6992586d, type: 3}
   buildVFX: {fileID: 8870238227063747471, guid: 8473565ce6853804da84ab249c168cdc, type: 3}
 --- !u!114 &2076040196
 MonoBehaviour:
