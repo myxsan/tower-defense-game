@@ -10,10 +10,10 @@ public class WaveSpawner : MonoBehaviour
     public Transform spawnPoint;
     public Text countDownText;
 
-    public float timeBetweenWaves = 5f;
+    public float timeBetweenWaves = 10f;
     private float countDown = 2f;
 
-    private int waveIndex = 1;
+    private int waveIndex = 0;
 
     private void Update() {
         if (countDown <= 0f)
@@ -31,16 +31,14 @@ public class WaveSpawner : MonoBehaviour
 
     private IEnumerator SpawnWave()
     {
+        waveIndex ++;
+        PlayerStats.Rounds++;
 
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();
             yield return new WaitForSeconds(0.5f);
         }
-
-
-
-        waveIndex ++;
     }
 
     private void SpawnEnemy()
