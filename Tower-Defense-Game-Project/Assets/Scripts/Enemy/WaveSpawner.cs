@@ -20,6 +20,12 @@ public class WaveSpawner : MonoBehaviour
     private void Update() {
         if(EnemiesAlive > 0) return;
 
+        if(waveIndex == waves.Length)
+        {
+            gameManager.WinLevel();
+            this.enabled = false;
+        }
+
         if (countDown <= 0f)
         {
             StartCoroutine(SpawnWave());
@@ -47,12 +53,6 @@ public class WaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(1 / wave.rate);
         }
         waveIndex ++;
-
-        if(waveIndex == waves.Length)
-        {
-            gameManager.WinLevel();
-            this.enabled = false;
-        }
     }
 
     private void SpawnEnemy(GameObject enemy)
