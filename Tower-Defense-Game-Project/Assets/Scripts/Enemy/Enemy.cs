@@ -45,6 +45,8 @@ public class Enemy : MonoBehaviour
         GameObject vfxIns = (GameObject)Instantiate(deathVFX, transform.position, Quaternion.identity);
         Destroy(vfxIns, 5f);
 
+        WaveSpawner.EnemiesAlive--;
+
         Destroy(gameObject);
     }
 }
