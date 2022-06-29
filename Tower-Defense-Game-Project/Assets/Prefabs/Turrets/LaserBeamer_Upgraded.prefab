@@ -4827,7 +4827,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6a7321fcef3edd6489af46caf9ab736c, type: 2}
+  - {fileID: 2100000, guid: 676063be881ff814fb7db01e9a6986a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4997,7 +4997,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.21194872, g: 0.9811321, b: 0.16197933, a: 1}
+  m_Color: {r: 0.98039216, g: 0.1681997, b: 0.16078429, a: 1}
   m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
@@ -5332,7 +5332,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.39101994, g: 0.8207547, b: 0.40759754, a: 1}
+      maxColor: {r: 0.8207547, g: 0.274322, b: 0.13550194, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -9926,7 +9926,7 @@ GameObject:
   - component: {fileID: 5633637533306587464}
   - component: {fileID: 1339048427960951241}
   m_Layer: 0
-  m_Name: LaserBeamer
+  m_Name: LaserBeamer_Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9941,7 +9941,7 @@ Transform:
   m_GameObject: {fileID: 8565056278529997997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 4890100121683175260}
   - {fileID: 2648593429573351461}
@@ -9961,14 +9961,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d469a70f68b00bc47b100b42661b7e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 20
+  range: 30
   turnSpeed: 10
   enemyTag: Enemy
   fireRate: 1
   bulletPrefab: {fileID: 0}
   useLaser: 1
-  damageOverTime: 30
-  slowAmount: 0.5
+  damageOverTime: 45
+  slowAmount: 0.8
   lineRenderer: {fileID: 1339048427960951241}
   impactVFX: {fileID: 8980191495576051918}
   impactLight: {fileID: 6455013181107110994}
@@ -10046,8 +10046,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.1802243, g: 0.8490566, b: 0.6467047, a: 0.6039216}
-      key1: {r: 0.013572444, g: 0.5754717, b: 0.098736346, a: 1}
+      key0: {r: 0.9529412, g: 0.33216992, b: 0.058823552, a: 0.6039216}
+      key1: {r: 1, g: 0.11461408, b: 0, a: 1}
       key2: {r: 0.9339623, g: 0.30302045, b: 0.16300285, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -10140,9 +10140,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 91816e495b5842f43afa89bee5b93a2a, type: 2}
   - {fileID: 2100000, guid: 27d942b985a005448b309346597cf9bb, type: 2}
   - {fileID: 2100000, guid: d8d99e373a3bce543a1c99cb28931d69, type: 2}
-  - {fileID: 2100000, guid: 91816e495b5842f43afa89bee5b93a2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

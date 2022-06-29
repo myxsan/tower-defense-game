@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 7015748268333544001}
   - component: {fileID: 3243721073597447439}
   m_Layer: 0
-  m_Name: Missle
+  m_Name: Missle_Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017b9e50a8365748bc2046a4464346a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 35
-  speed: 30
-  explosionRadius: 7
+  damage: 50
+  speed: 40
+  explosionRadius: 9
   impactVFX: {fileID: 5831375427286453918, guid: 9d93a043d0f389e4680f491b0a022aec, type: 3}
